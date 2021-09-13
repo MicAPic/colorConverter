@@ -187,11 +187,11 @@ def user_input():
         exit()
     try:
         color_code = list(map(int, input('Укажите цвет: ').split(' ')))
-        print('-----------------------------')
+        print('-' * 29)
         globals()[response](color_code)
     except ValueError:
         print('Неверный код цвета')
-    print('-----------------------------')
+    print('-' * 29)
 
 
 if __name__ == '__main__':
